@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100%; */
+    background-color: #000;
+    color: #fff;
+}
+
+/* Task 1 */
+
+.field-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.field-1__element{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(126, 124, 238);
+    animation: rotation 2s infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotation {
+    from {transform: rotate(360deg)}
+}
+
+/* Task 2.1 */
+.field-2-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(169, 146, 233);
+    margin-bottom: 50px;
+}
+
+.btn-1 {
+all:unset;
+border-radius: 3px;
+cursor: pointer;
+padding: 15px 25px;
+background-color: rgb(138, 82, 241);
+text-transform: uppercase;
+font-weight: lighter;
+color: #fff;
+letter-spacing: 10px;
+transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+}
+
+.btn-1:hover {
+    transform:  translateY(6px);
+    box-shadow: 0 22px 5px -10px rgb(152, 89, 224);
+}

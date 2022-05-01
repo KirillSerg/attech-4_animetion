@@ -59,10 +59,36 @@ text-transform: uppercase;
 font-weight: lighter;
 color: #fff;
 letter-spacing: 10px;
-transition: transform 0.5s ease-in, box-shadow 0.5s ease-in;
+transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
 }
 
 .btn-1:hover {
     transform:  translateY(6px);
     box-shadow: 0 22px 5px -10px rgb(152, 89, 224);
+}
+
+/* Task 2.2 */
+.field-2-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.btn-2 {
+    all: unset;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 20px 25px;
+    background-color: #000;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.btn-2:hover {
+    background-color: rgb(42, 231, 168);
 }

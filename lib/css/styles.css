@@ -156,3 +156,53 @@ transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
     background-color: rgb(243, 48, 250);
     color: rgb(4, 240, 161);
 }
+
+/* Task 3 */
+.field-3 {
+    display: flex;
+    justify-content: center;
+    background:#fff;
+    width: 500px;
+    height: 300px;
+}
+
+.arrow {
+    margin-top: 20px;
+    position: absolute;
+    height: calc(150px - 20px - 10px);
+    width: 1px;
+    background: green;
+    animation: circle 60s infinite;
+    transform-origin: 50% 100%;
+    animation-timing-function: linear;
+}
+
+.arrow-minute {
+    margin-top: 40px;
+    position: absolute;
+    height: calc(150px - 40px - 10px);
+    width: 2px;
+    background: blue;
+    transform: rotate(90deg);
+    animation: circle 3600s infinite;
+    transform-origin: 50% 100%;
+    animation-timing-function: linear;
+}
+
+.arrow-hour {
+    margin-top: 60px;
+    position: absolute;
+    height: calc(150px - 60px - 10px);
+    width: 4px;
+    background: purple;
+    animation: circle 43200s infinite;
+    transform-origin: 50% 100%;
+    animation-timing-function: linear;
+}
+
+
+@keyframes circle {
+    100% {
+        transform: rotate(360deg);
+    }
+}
